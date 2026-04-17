@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --color-primary: #FF7F50;
+  --color-background-light: #FFFFFF;
+  --color-background-dark: #121212;
+  --color-surface-light: #F8F9FA;
+  --color-surface-dark: #1E1E1E;
+
+  /* New Case Study Theme Colors */
+  --color-surface-container-lowest: #ffffff;
+  --color-inverse-surface: #2e3132;
+  --color-secondary-fixed: #dbe2fc;
+  --color-surface-bright: #f8f9fa;
+  --color-error: #ba1a1a;
+  --color-surface: #f8f9fa;
+  --color-on-primary-fixed-variant: #822800;
+  --color-on-tertiary-fixed: #002018;
+  --color-on-surface: #191c1d;
+  --color-on-secondary-fixed: #161d30;
+  --color-on-secondary-fixed-variant: #3f465b;
+  --color-tertiary-fixed: #c7eadc;
+  --color-background: #f8f9fa;
+  --color-surface-container-high: #e7e8e9;
+  --color-on-primary: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-secondary-fixed-dim: #bfc6df;
+  --color-inverse-primary: #ffb59c;
+  --color-surface-container-highest: #e1e3e4;
+  --color-on-secondary-container: #5b6278;
+  --color-primary-fixed: #ffdbcf;
+  --color-on-secondary: #ffffff;
+  --color-on-primary-container: #6c2000;
+  --color-on-tertiary: #ffffff;
+  --color-secondary-container: #d8dff9;
+  --color-on-primary-fixed: #380c00;
+  --color-on-background: #191c1d;
+  --color-surface-container: #edeeef;
+  --color-surface-container-low: #f3f4f5;
+  --color-secondary: #575e74;
+  --color-on-error: #ffffff;
+  --color-tertiary-container: #89ab9e;
+  --color-on-tertiary-fixed-variant: #2d4d42;
+  --color-error-container: #ffdad6;
+  --color-on-surface-variant: #57423b;
+  --color-surface-dim: #d9dadb;
+  --color-primary-container: #FF7F50;
+  --color-surface-variant: #e1e3e4;
+  --color-surface-tint: #FF7F50;
+  --color-tertiary: #45655a;
+  --color-inverse-on-surface: #f0f1f2;
+  --color-primary-fixed-dim: #ffb59c;
+  --color-outline-variant: #dec0b6;
+  --color-outline: #8b7169;
+  --color-on-tertiary-container: #204036;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background-light text-slate-900 font-sans antialiased;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+}
+
+@layer utilities {
+  .hero-overlay {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+  }
+  .nav-blur {
+    backdrop-filter: blur(8px);
+  }
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    background-color: rgba(248, 249, 250, 0.8);
+  }
+  .tonal-shift {
+    background: linear-gradient(135deg, #f8f9fa 0%, #edeeef 100%);
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-black tracking-tight uppercase;
+  }
+  .vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+}
