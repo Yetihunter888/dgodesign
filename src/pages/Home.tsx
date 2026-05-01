@@ -51,7 +51,7 @@ export default function Home({ onContactClick }: HomeProps) {
       id: 'cs-1',
       tag: 'ENTERPRISE SAAS',
       title: 'NICE/inContact Supervisor',
-      description: 'A deep-dive into reimagining the agent dashboard experience for real-time contact center management and performance tracking.',
+      description: 'Click to explore the case study, showcasing the journey from a whiteboard concept to a pivotal feature within the NICE CXOne platform.',
       goals: ['Goal: Real-time center management', 'Role: Lead UX Designer', 'Outcome: 4 Months timeline'],
       image: 'https://www.dropbox.com/scl/fi/q303ib81dl4i8ubvxewou/IMG_9084.jpg?rlkey=vjox3y9ik54fzw8iqqm5v1ifk&raw=1',
       link: '/case-study/nice-incontact'
@@ -607,7 +607,7 @@ export default function Home({ onContactClick }: HomeProps) {
               <div className="relative">
                 <div className="absolute -inset-4 bg-primary/10 rounded-2xl -rotate-3"></div>
                 <img 
-                  src="https://picsum.photos/seed/darren/600/600" 
+                  src="/profile.png" 
                   alt="Darren" 
                   className="relative rounded-2xl w-full aspect-square object-cover shadow-2xl"
                   referrerPolicy="no-referrer"

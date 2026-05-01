@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Zap, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 interface HeaderProps {
   onContactClick: () => void;
@@ -80,10 +80,7 @@ export default function Header({ onContactClick }: HeaderProps) {
             className="flex items-center gap-2 cursor-pointer"
             onClick={(e) => isHomePage && handleNavClick(e as any, '#home')}
           >
-            <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg shadow-primary/20">
-              <Zap className="size-5 fill-current" />
-            </div>
-            <div className="font-display font-bold text-2xl text-white">DGO</div>
+            <img src="/logo.png" alt="DGO Design Logo" className="h-16 object-contain" />
           </Link>
           
           <div className="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide uppercase text-white/80" ref={dropdownRef}>

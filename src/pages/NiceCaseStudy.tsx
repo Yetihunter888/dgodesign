@@ -80,7 +80,7 @@ export default function NiceCaseStudy({ onContactClick }: NiceCaseStudyProps) {
                   NICE/inContact Supervisor Experience
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-xl">
-                  Reimagining the contact center management dashboard for increased efficiency and reduced cognitive load for high-stakes environments.
+                  Contact center supervisors are the backbone of customer experience operations, yet their tools had not kept pace with the demands of the role. Through deep contextual inquiry and hands on research sessions, we built an entirely new product from the ground up that set a new standard for how supervisors work.
                 </p>
                 <div className="flex flex-wrap gap-4 pt-4">
                   <button className="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg hover:-translate-y-0.5 transition-all">

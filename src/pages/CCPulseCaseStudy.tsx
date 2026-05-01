@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { motion, AnimatePresence } from 'motion/react';
 import Header from '../components/Header';
+import ZoomableImage from '../components/ZoomableImage';
 
 interface CCPulseCaseStudyProps {
   onContactClick?: () => void;
@@ -24,6 +26,20 @@ export default function CCPulseCaseStudy({
   role = "Lead UX Designer",
   timeline = "8 Months"
 }: CCPulseCaseStudyProps) {
+  const rotorImages = [
+    '/iPad-WF1-1024x678.png',
+    '/iPad-WF2-1024x678.png',
+    '/iPad-WF3-1024x678.png'
+  ];
+  const [currentRotorImage, setCurrentRotorImage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentRotorImage((prev) => (prev + 1) % rotorImages.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="bg-surface font-body text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
       <Helmet>
@@ -59,7 +75,7 @@ export default function CCPulseCaseStudy({
             </div>
           </div>
           <div className="w-full md:w-1/2 relative bg-surface-container-low min-h-[400px]">
-            <img 
+            <ZoomableImage 
               alt={title} 
               className="absolute inset-0 w-full h-full object-cover" 
               src={heroImage}
@@ -182,10 +198,10 @@ export default function CCPulseCaseStudy({
                           </div>
                           <div className="flex gap-4">
                             <div className="flex-1 aspect-video rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-                              <img alt="interview session" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dMftglvumKhpHZ-HbKHzLRbZIPKMCSLSYqAziH9XSCfUym9jLHmGWCldmxMGo1sk-jIxAKr0uApx1ttRFShUW8cBxh1YDPtNy3k5a0cfmJlwCcFGrv6o5aOh4VqhS_g6genQiKdIbVObCGdT3pinX53uluxXuqwJpmUmcwEws3sPD42cgnaW5Uf9ETweyoK35Yi1v3mNja4d4uTwRIhaAZo93eWMUn2wSPyypnc0kZ6is_DEscaPJFW9x02AA75gQmUWyLAzAwkq" referrerPolicy="no-referrer" />
+                              <ZoomableImage alt="interview session" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dMftglvumKhpHZ-HbKHzLRbZIPKMCSLSYqAziH9XSCfUym9jLHmGWCldmxMGo1sk-jIxAKr0uApx1ttRFShUW8cBxh1YDPtNy3k5a0cfmJlwCcFGrv6o5aOh4VqhS_g6genQiKdIbVObCGdT3pinX53uluxXuqwJpmUmcwEws3sPD42cgnaW5Uf9ETweyoK35Yi1v3mNja4d4uTwRIhaAZo93eWMUn2wSPyypnc0kZ6is_DEscaPJFW9x02AA75gQmUWyLAzAwkq" referrerPolicy="no-referrer" />
                             </div>
                             <div className="flex-1 aspect-video rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-                              <img alt="brainstorming" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAjcHyS4WjLCPoQ8HcjC3lJkG_So1b0P8yjlTVUNpv-x12_FKCdHIpmx5TjDhMXc6zXqMcuV4KtCoYJ9MK_br4CpmshjWeVHAb9iTbwVg8XB0PrfZ0PHuFhjGSccu6_llBot5jChBSEbcEZxjRZwRDcmq5d1a4hiMuW_fr8GUhtvovOG5qrsPXtbDOjL6DeTWGoTkq5E-bSShyCjEiP7RMgHJ2IWmGs-TBHtttsN9vHkgC4VPgDyP63u3bBp5IuoSx3zsr-i5Xr67y" referrerPolicy="no-referrer" />
+                              <ZoomableImage alt="brainstorming" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAjcHyS4WjLCPoQ8HcjC3lJkG_So1b0P8yjlTVUNpv-x12_FKCdHIpmx5TjDhMXc6zXqMcuV4KtCoYJ9MK_br4CpmshjWeVHAb9iTbwVg8XB0PrfZ0PHuFhjGSccu6_llBot5jChBSEbcEZxjRZwRDcmq5d1a4hiMuW_fr8GUhtvovOG5qrsPXtbDOjL6DeTWGoTkq5E-bSShyCjEiP7RMgHJ2IWmGs-TBHtttsN9vHkgC4VPgDyP63u3bBp5IuoSx3zsr-i5Xr67y" referrerPolicy="no-referrer" />
                             </div>
                           </div>
                         </div>
@@ -207,7 +223,7 @@ export default function CCPulseCaseStudy({
               Moderators faced constant real-time challenges, navigating a fragmented ecosystem where managing content across multiple platforms required jumping between siloed tools, leading to missed violations and operational drift.
             </p>
             <div className="mb-16 aspect-video rounded-3xl overflow-hidden border border-white/5 shadow-2xl bg-on-secondary-fixed">
-              <img alt="Intelligent Architecture: Data Flow & Control" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujc5mgkcTmcZxqsrURaOxqsrM3mOxlt-QwUBBbYxdg1AZztzzlHwHAOBuoMqPOWQP4P4ADPJrzCPXzf_0A_UKG6zowYCRFenlnNWELb17XTPs2B22lgoPwu6G7sGOxMCvG96hyCY1zmkVnnkrrYkB9vmg_C-Vm-aCKDT3H8J0b62hspeTj17WtVmOL8ubtOFwZk9KwNX44CbOaOii7GiRzbUZT9hf_PTTJSlAPQ3xwN4zPv_Gv49m7DRIL4QO6xlHyKrD-JHjoGsw" referrerPolicy="no-referrer" />
+              <ZoomableImage alt="Intelligent Architecture: Data Flow & Control" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujc5mgkcTmcZxqsrURaOxqsrM3mOxlt-QwUBBbYxdg1AZztzzlHwHAOBuoMqPOWQP4P4ADPJrzCPXzf_0A_UKG6zowYCRFenlnNWELb17XTPs2B22lgoPwu6G7sGOxMCvG96hyCY1zmkVnnkrrYkB9vmg_C-Vm-aCKDT3H8J0b62hspeTj17WtVmOL8ubtOFwZk9KwNX44CbOaOii7GiRzbUZT9hf_PTTJSlAPQ3xwN4zPv_Gv49m7DRIL4QO6xlHyKrD-JHjoGsw" referrerPolicy="no-referrer" />
             </div>
             <h3 className="text-xs font-black tracking-[0.2em] uppercase mb-8 text-center" style={{ color: '#FF7F50' }}>Key research outtakes for MVP</h3>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
@@ -269,12 +285,37 @@ export default function CCPulseCaseStudy({
                   </ul>
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-2xl bg-surface-container-high aspect-video">
-                  <img alt="Moderation Dashboard Screenshot" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGB8qZsasZyAbUDMhN1SZMpHHs8xVg5fvbZYuYzdNGdQ4a0pXUAzlJtdggOjjFZ5Ps0HCObIjfXdNUA6KNLB8jLlnS8JIV9q0LAei8KGaT-b1HvwEmfWpQM5oEoQGFkCi3tVV_7dM8aiPXsb0-6W965PR6mi5_gyFPJWXFR1t9D4YHCOUCNoAYT62ZyzU1zyblG1zxQ9fz3Al7VqQyFWZvarzdUjTV2-nvjpqLNilc5CzSVqlV940Xsu-cMeD5F7flsx1i4YTHS2BK" referrerPolicy="no-referrer" />
+                  <ZoomableImage alt="Moderation Dashboard Screenshot" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGB8qZsasZyAbUDMhN1SZMpHHs8xVg5fvbZYuYzdNGdQ4a0pXUAzlJtdggOjjFZ5Ps0HCObIjfXdNUA6KNLB8jLlnS8JIV9q0LAei8KGaT-b1HvwEmfWpQM5oEoQGFkCi3tVV_7dM8aiPXsb0-6W965PR6mi5_gyFPJWXFR1t9D4YHCOUCNoAYT62ZyzU1zyblG1zxQ9fz3Al7VqQyFWZvarzdUjTV2-nvjpqLNilc5CzSVqlV940Xsu-cMeD5F7flsx1i4YTHS2BK" referrerPolicy="no-referrer" />
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-16 items-center">
-                <div className="order-2 md:order-1 rounded-xl overflow-hidden shadow-2xl bg-surface-container-high aspect-video">
-                  <img alt="Granular Drill-ins View" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDQPpQy5ujJ34QnrXH-pcYqwiq11YvmTTtpbxGD1fHQ0Eq_WeU5zoLu-ZWieu1Li4vgZxiaHEz3XbxH2n6TVOaeUfoMlFzmwhF2TZIR0zXs7W6Y7orab7y50MZbyrs84hGTf8Q9Zm6rATA_JbyZCcs6ywVuRoQWprlhh-L_RiT8jFfxWnT5n7MQ88QBLG5BA95jhuqM7WoIEuVm8dorH3sMTwe3PlXeax2L7aVbwr8Gce7EoDwnPwCCucnyVKqcAYLCVFfZD89VZM" referrerPolicy="no-referrer" />
+                <div className="order-2 md:order-1 rounded-xl overflow-hidden shadow-2xl bg-surface-container-high aspect-video relative group flex items-center justify-center p-4">
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={currentRotorImage}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ duration: 0.5 }}
+                      alt={`Granular Drill-ins View ${currentRotorImage + 1}`}
+                      className="w-full h-full object-contain drop-shadow-xl"
+                      src={rotorImages[currentRotorImage]}
+                    />
+                  </AnimatePresence>
+                  
+                  {/* Rotor indicators */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10 bg-black/40 px-3 py-2 rounded-full backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity">
+                    {rotorImages.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setCurrentRotorImage(idx)}
+                        className={`w-2 h-2 rounded-full transition-all ${
+                          idx === currentRotorImage ? 'bg-primary w-4' : 'bg-white hover:bg-white/80'
+                        }`}
+                        style={idx === currentRotorImage ? { backgroundColor: '#FF7F50' } : {}}
+                      />
+                    ))}
+                  </div>
                 </div>
                 <div className="order-1 md:order-2">
                   <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-4 block" style={{ color: '#FF7F50' }}>Contextual Depth</span>
@@ -308,7 +349,7 @@ export default function CCPulseCaseStudy({
                   </div>
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-2xl bg-surface-container-high aspect-video">
-                  <img alt="Direct Intervention Interface" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArODthAc4813VMJt7e2BEELX3TsT6dpUKT38IAQSgkgg45AwMfDp2sLbWpapzRGHhz08VYsl78K9UR0b7f8teT-tWH9-NWep0ucqhlfjyLOoMSzHWXvj8UtCKwFz_Ifo8xwqmFznRc9jxVl10sgleVZr558nKKHLJ36eDqzO52bcMypWyfB6vbiD4alLYKoPAqcCDi6jfVkowRISaZo5PErFOiAOmh0r04RQ3BFdJR2DeJCTqDlCtjbBv4lCcoAGbe9WEGdxQbabJk" referrerPolicy="no-referrer" />
+                  <ZoomableImage alt="Direct Intervention Interface" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArODthAc4813VMJt7e2BEELX3TsT6dpUKT38IAQSgkgg45AwMfDp2sLbWpapzRGHhz08VYsl78K9UR0b7f8teT-tWH9-NWep0ucqhlfjyLOoMSzHWXvj8UtCKwFz_Ifo8xwqmFznRc9jxVl10sgleVZr558nKKHLJ36eDqzO52bcMypWyfB6vbiD4alLYKoPAqcCDi6jfVkowRISaZo5PErFOiAOmh0r04RQ3BFdJR2DeJCTqDlCtjbBv4lCcoAGbe9WEGdxQbabJk" referrerPolicy="no-referrer" />
                 </div>
               </div>
             </div>

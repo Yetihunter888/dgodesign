@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import { motion, AnimatePresence } from 'motion/react';
+import ZoomableImage from '../components/ZoomableImage';
 
 interface NiceDashboardPortfolioProps {
   onContactClick: () => void;
@@ -27,7 +28,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
       icon: 'brush',
       description: 'We brought supervisors into the design process. Using low-fidelity sketches, we prototyped the "Zero-Latency" dashboard together, ensuring that critical KPIs were prioritized based on actual urgency rather than technical ease.',
       points: ['3 Iterative Sprints', 'Rapid Prototyping'],
-      image: 'https://lh3.googleusercontent.com/aida/ADBb0ui9qofzq8171FKDdpkFughxPb7oJrPuRjYQJRZ-ZtDFdpylxmSr-L9a7I9JPWjj30-6VMCoZBfIfcwBznvcNwbABjCVGQ6_0pJQj9qx1DMJLp0C2buz1TJVVaPZEypSwH9VzWQYHdAcOducCBZP6mMB5oCHBgUdrJzyycuWhFrK0jU5K3OoQzHf50_qNVzCr6Vy2XkZVAvUxDKlFzcpaiZVoPl0HX0sk0ZjI4yE2cX9n6-M7IGxnal0i28fHYhaqI1oOX4gePF3v8Y'
+      image: 'https://placehold.co/1200x800/e1e3e4/57423b?text=Phase+2+Image'
     },
     {
       id: 'final',
@@ -36,7 +37,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
       icon: 'verified',
       description: 'High-fidelity usability tests revealed a 42% reduction in time-to-task completion. Supervisors noted that the new "Drill-to-Action" pattern eliminated the need for external spreadsheets, keeping them in one unified environment.',
       points: ['Summative Testing', '98% CSAT Rating'],
-      image: 'https://lh3.googleusercontent.com/aida/ADBb0ui9qofzq8171FKDdpkFughxPb7oJrPuRjYQJRZ-ZtDFdpylxmSr-L9a7I9JPWjj30-6VMCoZBfIfcwBznvcNwbABjCVGQ6_0pJQj9qx1DMJLp0C2buz1TJVVaPZEypSwH9VzWQYHdAcOducCBZP6mMB5oCHBgUdrJzyycuWhFrK0jU5K3OoQzHf50_qNVzCr6Vy2XkZVAvUxDKlFzcpaiZVoPl0HX0sk0ZjI4yE2cX9n6-M7IGxnal0i28fHYhaqI1oOX4gePF3v8Y'
+      image: 'https://placehold.co/1200x800/e1e3e4/57423b?text=Phase+3+Image'
     }
   ];
 
@@ -72,7 +73,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
             </div>
             <div className="relative group">
               <div className="rounded-2xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(22,29,48,0.15)] border border-[#e1e3e4] transition-transform duration-700 group-hover:scale-[1.02]">
-                <img 
+                <ZoomableImage 
                   alt="NICE Dashboard interface on a laptop" 
                   className="w-full h-auto object-cover" 
                   src="https://www.dropbox.com/scl/fi/q303ib81dl4i8ubvxewou/IMG_9084.jpg?rlkey=vjox3y9ik54fzw8iqqm5v1ifk&raw=1"
@@ -126,14 +127,14 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
             <div className="space-y-8">
               <div className="text-xs font-bold uppercase tracking-widest text-[#FF5733]">The Objective</div>
               <h2 className="text-4xl font-black text-[#161d30] tracking-tighter">The Research Objective</h2>
-              <p className="text-lg text-[#57423b] leading-relaxed">Improving our dashboards required a focused effort to uncover both strengths and shortcomings in the current experience. Our research centered on understanding what customers actively use, what capabilities are lacking, and the challenges they encounter when navigating our dashboards. These findings enabled us to identify strategic opportunities to enhance usability, fill critical gaps, and ultimately deliver a top-tier product that better supports customer needs.</p>
+              <p className="text-lg text-[#57423b] leading-relaxed">Improving our dashboards started with an honest look at where we were falling short. Setup had become overwhelming, with too many options and data points leaving users uncertain whether they were pulling the correct information. We knew usability issues existed, but we wanted to let our users surface the full picture beyond what we already suspected. We also recognized a deeper problem: our dashboards displayed data but offered no way to act on it, forcing users across multiple platforms just to resolve a single issue. Our research gave us the clarity we needed to build something that truly worked for our customers.</p>
             </div>
             <div className="relative group">
               <div className="rounded-2xl overflow-hidden shadow-lg border border-[#e1e3e4] transition-transform duration-700 group-hover:scale-[1.02]">
-                <img 
+                <ZoomableImage 
                   alt="Professional affinity mapping session" 
                   className="w-full h-64 object-cover" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmQlSzvNbd71RvtzInj8bYy7Wdh5gjOB_Z8xmjp6d_eeeOz8RaBV4NZW398oMmRU5ZyRBmo5OfsCZ8ggoQnI2FnE9lhKKg3u_WPIBiY3CwHuyKDciEOFVGmjebsslEwmzELA-pRKf-oIz6zokzSiuUlhLS4-x1wLctwO43HlEMFg2DwKWWfAOFLkqs1fiB-s1KFGA6qkasQ8ua37uI7kVGoqmUK43QogkJLL9BhmOBb3ff3vBR6Gf2ceqTX6dhST8m3cAK9pvp0oab"
+                  src="https://placehold.co/1200x800/e1e3e4/57423b?text=Research+Image"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -190,15 +191,15 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
               <ul className="space-y-8 flex flex-col items-center">
                 <li className="flex gap-5 items-start text-left max-w-2xl">
                   <span className="material-symbols-outlined text-3xl shrink-0 mt-1 text-[#FF5733]">insights</span>
-                  <p className="text-lg text-[#57423b] leading-relaxed">Finding 1: Insights regarding user navigation patterns revealed a critical need for centralized access to real-time performance metrics without constant tab-switching.</p>
+                  <p className="text-lg text-[#57423b] leading-relaxed">Finding 1: Users were overwhelmed by the sheer volume of data points and variables available. A clear opportunity emerged to better organize and prioritize the most commonly used metrics, making the experience far less daunting and easier to navigate at a glance.</p>
                 </li>
                 <li className="flex gap-5 items-start text-left max-w-2xl">
                   <span className="material-symbols-outlined text-3xl shrink-0 mt-1 text-[#FF5733]">error_outline</span>
-                  <p className="text-lg text-[#57423b] leading-relaxed">Finding 2: Identification of key friction points highlighted that 65% of supervisor time was spent manually compiling data from disconnected legacy modules.</p>
+                  <p className="text-lg text-[#57423b] leading-relaxed">Finding 2: Usability issues and unexpected interactions surfaced consistently throughout our interviews. Rather than assumptions, we now had direct user validation that gave us a clear and prioritized list of fixes that needed to be addressed.</p>
                 </li>
                 <li className="flex gap-5 items-start text-left max-w-2xl">
                   <span className="material-symbols-outlined text-3xl shrink-0 mt-1 text-[#FF5733]">rocket_launch</span>
-                  <p className="text-lg text-[#57423b] leading-relaxed">Finding 3: Strategic Product Alignment – Identifying opportunities for cross-product synergy to ensure a cohesive design language that integrates seamlessly with the Custom Reporting suite being developed in parallel.</p>
+                  <p className="text-lg text-[#57423b] leading-relaxed">Finding 3: Strategic Product Alignment: Our dashboards needed to feel like part of a cohesive family. We identified a significant opportunity to establish a consistent design language across the entire product suite, ensuring seamless integration with the Custom Reporting suite being developed in parallel.</p>
                 </li>
               </ul>
             </div>
@@ -211,7 +212,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
             <span className="block text-[0.75rem] tracking-[0.2em] font-extrabold uppercase text-[#FF5733]/80 mb-4">03 / DESIGN SOLUTION</span>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center mt-8">
               <div>
-                <div className="text-[#FF5733] font-bold tracking-widest text-xs uppercase mb-6">Interaction Design</div>
+                <div className="text-[#FF5733] font-bold tracking-widest text-xs uppercase mb-6">Sketching & Iteration</div>
                 <h2 className="text-5xl font-black tracking-tighter mb-8 leading-tight">Zero-Latency <span className="text-[#FF5733]">Decision Making</span></h2>
                 <p className="text-xl text-[#dec0b6]/70 leading-relaxed mb-10">
                   We introduced a "Drill-to-Action" pattern. Instead of separate modules, the interface expands contextually, keeping the supervisor's mental model focused on the specific agent interaction.
@@ -228,16 +229,49 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
               </div>
               <div className="relative">
                 <div className="aspect-video bg-[#1e273d] rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
-                  <img 
+                  <ZoomableImage 
                     alt="Professional analytics dashboard UI" 
                     className="w-full h-full object-cover" 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJSEj10NWLdplpgoOt0Nr7nHejN0GcX9ZJDSv27PuitygOuuXh-iXZyTPTYomYNI05UGc3hdkCHJjNbZfW8gd7Bq1L72FnVY54tZmJ1c6WpnC55kdWWkwOu7Y3C1kBsyzbWWPp7Eyps02bDFeHn7N67ra7SWvqyeDPo8q3mT8irnYpOTfgxiMqtk5kOjc3q_VzH-h_wmK5L6XFRtrdB9l6aZf2riTmNTYrTLxfzzX6Fl6u5-3DxIUK9mNck4C0jHnq1U-uPDeUS-5A"
+                    src="https://placehold.co/1200x800/e1e3e4/57423b?text=Sketching+Solution"
                     referrerPolicy="no-referrer"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-[#FF5733] p-6 rounded-xl shadow-xl hidden lg:block">
                   <div className="text-xs uppercase font-bold tracking-widest mb-1">Focus Mode</div>
                   <div className="font-black text-2xl">42% Faster</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center mt-32">
+              <div className="relative order-2 lg:order-1">
+                <div className="aspect-video bg-[#1e273d] rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
+                  <ZoomableImage 
+                    alt="Professional analytics dashboard UI" 
+                    className="w-full h-full object-cover" 
+                    src="https://placehold.co/1200x800/e1e3e4/57423b?text=Product+Solution"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -right-6 bg-[#FF5733] p-6 rounded-xl shadow-xl hidden lg:block">
+                  <div className="text-xs uppercase font-bold tracking-widest mb-1">Focus Mode</div>
+                  <div className="font-black text-2xl">42% Faster</div>
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="text-[#FF5733] font-bold tracking-widest text-xs uppercase mb-6">Product Design Solution</div>
+                <h2 className="text-5xl font-black tracking-tighter mb-8 leading-tight">Zero-Latency <span className="text-[#FF5733]">Decision Making</span></h2>
+                <p className="text-xl text-[#dec0b6]/70 leading-relaxed mb-10">
+                  We introduced a "Drill-to-Action" pattern. Instead of separate modules, the interface expands contextually, keeping the supervisor's mental model focused on the specific agent interaction.
+                </p>
+                <div className="space-y-6">
+                  <div className="flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-[#FF5733]">animation</span>
+                    <div>
+                      <h4 className="font-bold">Fluid Transitions</h4>
+                      <p className="text-sm opacity-60">Reducing disorientation during deep-dives into data, ensuring the "cockpit" remains stable.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -300,7 +334,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
                       </div>
                     </div>
                     <div className="flex-1 w-full">
-                      <img 
+                      <ZoomableImage 
                         alt={phase.title} 
                         className="w-full rounded-2xl shadow-xl" 
                         src={phase.image}
@@ -325,10 +359,10 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-8">
                 <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#e1e3e4]">
-                  <img 
+                  <ZoomableImage 
                     alt="Dashboard global view" 
                     className="w-full h-auto object-cover" 
-                    src="https://lh3.googleusercontent.com/aida/ADBb0ui9qofzq8171FKDdpkFughxPb7oJrPuRjYQJRZ-ZtDFdpylxmSr-L9a7I9JPWjj30-6VMCoZBfIfcwBznvcNwbABjCVGQ6_0pJQj9qx1DMJLp0C2buz1TJVVaPZEypSwH9VzWQYHdAcOducCBZP6mMB5oCHBgUdrJzyycuWhFrK0jU5K3OoQzHf50_qNVzCr6Vy2XkZVAvUxDKlFzcpaiZVoPl0HX0sk0ZjI4yE2cX9n6-M7IGxnal0i28fHYhaqI1oOX4gePF3v8Y"
+                    src="https://placehold.co/1600x900/e1e3e4/57423b?text=Final+Result+Dashboard"
                     referrerPolicy="no-referrer"
                   />
                 </div>

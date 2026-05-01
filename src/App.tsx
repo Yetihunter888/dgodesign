@@ -42,7 +42,7 @@ export default function App() {
               <CaseStudyTemplate 
                 onContactClick={handleContactClick}
                 title="NICE/inContact Supervisor Experience"
-                subtitle="Reimagining the contact center management dashboard for increased efficiency and reduced cognitive load for high-stakes environments."
+                subtitle="Contact center supervisors are the backbone of customer experience operations, yet their tools had not kept pace with the demands of the role. Through deep contextual inquiry and hands on research sessions, we built an entirely new product from the ground up that set a new standard for how supervisors work."
                 heroImage="https://lh3.googleusercontent.com/aida-public/AB6AXuBPMqiiaRKNUfZ-Be2Tt1kVQWcLsQE3NyeEKdt3mkfeKfwqL64rduMnhAgdzm2kfvrCrewxr_xCUwY3_RLj6uZEO9PRrG9PIbQwbtH9rVbgsYS0HlJ1nAAPpoaK9A9A1654xdnxIyOzyCuFP4MC2wzq4Y09VEnIX-vYYo_4D9fUjLWMDKSKztdQN_SO0Fzy4WHiIsCHpUf3WosT82DJHC1MXntNW-mFKlqW1uAkW2kjKDNSKBOBQDU3fbt_UXIIDLM1-r7rqDDP43lx"
                 company="NICE/inContact"
                 task="Dashboard Redesign"
