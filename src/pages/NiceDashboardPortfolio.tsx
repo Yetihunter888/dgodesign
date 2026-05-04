@@ -28,7 +28,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
       icon: 'brush',
       description: 'We brought supervisors into the design process. Using low-fidelity sketches, we prototyped the "Zero-Latency" dashboard together, ensuring that critical KPIs were prioritized based on actual urgency rather than technical ease.',
       points: ['3 Iterative Sprints', 'Rapid Prototyping'],
-      image: 'https://placehold.co/1200x800/e1e3e4/57423b?text=Phase+2+Image'
+      image: '/nice_phase2_placeholder.png'
     },
     {
       id: 'final',
@@ -37,7 +37,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
       icon: 'verified',
       description: 'High-fidelity usability tests revealed a 42% reduction in time-to-task completion. Supervisors noted that the new "Drill-to-Action" pattern eliminated the need for external spreadsheets, keeping them in one unified environment.',
       points: ['Summative Testing', '98% CSAT Rating'],
-      image: 'https://placehold.co/1200x800/e1e3e4/57423b?text=Phase+3+Image'
+      image: '/nice_phase3_placeholder.png'
     }
   ];
 
@@ -134,7 +134,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
                 <ZoomableImage 
                   alt="Professional affinity mapping session" 
                   className="w-full h-64 object-cover" 
-                  src="https://placehold.co/1200x800/e1e3e4/57423b?text=Research+Image"
+                  src="/nice_research_placeholder.png"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -232,7 +232,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
                   <ZoomableImage 
                     alt="Professional analytics dashboard UI" 
                     className="w-full h-full object-cover" 
-                    src="https://placehold.co/1200x800/e1e3e4/57423b?text=Sketching+Solution"
+                    src="/nice_sketching_placeholder.png"
                     referrerPolicy="no-referrer"
                   />
                 </div>
@@ -249,7 +249,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
                   <ZoomableImage 
                     alt="Professional analytics dashboard UI" 
                     className="w-full h-full object-cover" 
-                    src="https://placehold.co/1200x800/e1e3e4/57423b?text=Product+Solution"
+                    src="/nice_product_placeholder.png"
                     referrerPolicy="no-referrer"
                   />
                 </div>
@@ -362,7 +362,7 @@ export default function NiceDashboardPortfolio({ onContactClick }: NiceDashboard
                   <ZoomableImage 
                     alt="Dashboard global view" 
                     className="w-full h-auto object-cover" 
-                    src="https://placehold.co/1600x900/e1e3e4/57423b?text=Final+Result+Dashboard"
+                    src="/nice_final_placeholder.png"
                     referrerPolicy="no-referrer"
                   />
                 </div>

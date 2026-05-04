@@ -18,13 +18,13 @@ interface CCPulseCaseStudyProps {
 
 export default function CCPulseCaseStudy({ 
   onContactClick,
-  title = "CC Pulse: Content Control Redefined",
-  subtitle = "A deep-dive into the UX transformation of the CC Pulse dashboard for real-time monitoring and high-stakes content moderation.",
+  title = "CC Pulse",
+  subtitle = "Senior leadership lacked a quick and effective way to assess the overall health of the contact center, while management struggled with routine monitoring tasks due to complex, inaccessible tools. CC Pulse set out to solve both problems — a lightweight, mobile-first product built for oversight on the go.",
   heroImage = "https://lh3.googleusercontent.com/aida-public/AB6AXuDO3cf4mu76dSUTfsjETUGzk9jLwWuWaSjezokMH4L4hnvdzGqhJbEEaInpzDzBe7JMbmb4kOW52lCMAxaozCvImdC6bSI3EfXnu0vv_TIwuOEJeL5vqcvszxnxHZHn82TNVZzwfp51X1mb5bG3pWkQGZZbTg4CozHcYa6IDzTexsmfXL0DErVogQKa7onOktNKFsVRMgzP1X7P775zfBYBaaiFxh1SonQjemEOaB4ydVX_5S-DxQGmLJA7dHvLQs-k_C0llhY0tpaa",
-  company = "CC Pulse",
-  task = "UX Transformation",
-  role = "Lead UX Designer",
-  timeline = "8 Months"
+  company = "Personal Project",
+  task = "Research, Prototype, Design",
+  role = "Lead UX Designer and Researcher",
+  timeline = "<!-- [CONFIRM] add project duration from your records -->[CONFIRM]"
 }: CCPulseCaseStudyProps) {
   const rotorImages = [
     '/iPad-WF1-1024x678.png',
@@ -93,25 +93,25 @@ export default function CCPulseCaseStudy({
               <div className="mb-16">
                 <span className="block text-[0.75rem] tracking-[0.2em] font-extrabold uppercase text-[#FF7F50] mb-4">01 / PRODUCT GENESIS</span>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-on-secondary-fixed uppercase leading-tight pb-4 border-b-4 border-primary/20 inline-block">Product Genesis & Vision</h2>
-                <p className="mt-6 text-on-surface-variant max-w-2xl text-lg">Through deep contextual inquiry, we uncovered the friction in the daily life of a content moderator.</p>
+                <p className="mt-6 text-on-surface-variant max-w-2xl text-lg">Through user interviews, two critical obstacles emerged. Upper management wanted real-time visibility into contact center operations but lacked the time to dig into dense reports. Supervisors needed to conduct weekly agent performance reviews but struggled to consistently make time for them. The overlap between these two needs pointed toward a single, unified product opportunity.</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-surface-container-lowest p-8 rounded-2xl border border-surface-container-high transition-all group hover:!shadow-[0_30px_60px_rgba(0,0,0,0.08),0_1px_8px_rgba(0,0,0,0.04)]" style={{ boxShadow: '0 20px 40px rgba(0,0,0,0.04), 0 1px 4px rgba(0,0,0,0.02)' }}>
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                     <span className="material-symbols-outlined text-primary group-hover:text-white">account_tree</span>
                   </div>
-                  <h3 className="text-xl font-extrabold text-on-secondary-fixed mb-4">The Fragmented Workflow</h3>
+                  <h3 className="text-xl font-extrabold text-on-secondary-fixed mb-4">Limited Leadership Visibility</h3>
                   <p className="text-on-surface-variant text-sm leading-relaxed">
-                    Observed moderators jumping between <span className="font-semibold text-on-surface">multiple siloed tools</span> just to gather context and take single moderation actions.
+                    Despite access to standard reports and dashboards, upper management expressed a desire for more hands-on insight into day-to-day operations — something numbers alone couldn't fully capture.
                   </p>
                 </div>
                 <div className="bg-surface-container-lowest p-8 rounded-2xl border border-surface-container-high transition-all group hover:!shadow-[0_30px_60px_rgba(0,0,0,0.08),0_1px_8px_rgba(0,0,0,0.04)]" style={{ boxShadow: '0 20px 40px rgba(0,0,0,0.04), 0 1px 4px rgba(0,0,0,0.02)' }}>
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                     <span className="material-symbols-outlined text-primary group-hover:text-white">bolt</span>
                   </div>
-                  <h3 className="text-xl font-extrabold text-on-secondary-fixed mb-4">Real-time Pressure</h3>
+                  <h3 className="text-xl font-extrabold text-on-secondary-fixed mb-4">Monitoring Time Constraints</h3>
                   <p className="text-on-surface-variant text-sm leading-relaxed">
-                    Identified a constant cycle of high-volume content streams followed by the <span className="font-semibold text-on-surface">burden of manual classification</span> under strict SLAs.
+                    Supervisors are responsible for weekly agent performance reviews — a critical quality task — but consistently making time for them amid competing priorities was a significant challenge.
                   </p>
                 </div>
                 <div className="bg-surface-container-lowest p-8 rounded-2xl border border-primary/20 transition-all group ring-1 ring-primary/5 hover:!shadow-[0_30px_60px_rgba(0,0,0,0.08),0_1px_8px_rgba(0,0,0,0.04)]" style={{ boxShadow: '0 20px 40px rgba(0,0,0,0.04), 0 1px 4px rgba(0,0,0,0.02)' }}>
@@ -120,7 +120,7 @@ export default function CCPulseCaseStudy({
                   </div>
                   <h3 className="text-xl font-extrabold text-on-secondary-fixed mb-4">The Opportunity</h3>
                   <p className="text-on-surface-variant text-sm leading-relaxed">
-                    Identified the need for a <span className="font-bold text-primary" style={{ color: '#FF7F50' }}>unified "Control Center"</span> that consolidates real-time monitoring and immediate action in a single editorial lens.
+                    Both personas could benefit from aspects of each other's ideal solution — creating an opportunity to design a single product supporting both strategic oversight and efficient team management.
                   </p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function CCPulseCaseStudy({
                     <div className="flex-1 py-8 flex flex-col">
                       <div className="px-8 mb-6">
                         <h3 className="text-[10px] uppercase tracking-[0.2em] text-primary font-black" style={{ color: '#FF7F50' }}>Process & Research</h3>
-                        <p className="text-[9px] text-slate-400 mt-1">Foundational Discovery</p>
+                        <p className="text-[9px] text-slate-400 mt-1">User Interviews · Persona Development · Contextual Discovery</p>
                       </div>
                       <div className="flex flex-col gap-0.5">
                         <button className="flex items-center gap-4 text-white font-bold border-l-4 border-primary pl-6 py-3 bg-white/5 transition-all duration-200" style={{ borderColor: '#FF7F50' }}>
@@ -175,26 +175,26 @@ export default function CCPulseCaseStudy({
                         <div className="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6 shadow-lg shadow-primary/10">
                           <span className="material-symbols-outlined text-3xl">search</span>
                         </div>
-                        <h2 className="text-4xl font-black text-on-background tracking-tighter mb-4">User Interviews</h2>
+                        <h2 className="text-4xl font-black text-on-background tracking-tighter mb-4">Personas & Overlap</h2>
                         <div className="h-1 w-16 bg-primary mb-6" style={{ backgroundColor: '#FF7F50' }}></div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
                         <div>
-                          <p className="text-on-surface-variant text-lg leading-relaxed font-light mb-4">
-                            I conduct structured and semi-structured interviews (Quantitative and Qualitative) to uncover the underlying "why" behind user behaviors.
+                          <h3 className="text-lg font-bold text-on-background mb-1">VP of Operations — Upper-Level Management</h3>
+                          <p className="text-on-surface-variant text-sm leading-relaxed mb-4">
+                            Higher-level management lacked direct access to real-time interactions on the call floor. They wanted to hear conversations firsthand to better understand sentiment and customer experience in a more human, intuitive way — something dashboards couldn't provide.
                           </p>
-                          <p className="text-on-surface-variant text-sm leading-relaxed">
-                            By isolating pain points in their natural context, we transition from assumptions to validated insights, ensuring the final product solves real-world frictions.
+                          <h3 className="text-lg font-bold text-on-background mb-1">Billing Support Supervisor — Frontline Management</h3>
+                          <p className="text-on-surface-variant text-sm leading-relaxed mb-4">
+                            Call reviews were essential but time-consuming and difficult to prioritize. Supervisors wanted a way to review calls more efficiently — ideally passively, in the background while handling other weekly tasks.
                           </p>
                         </div>
                         <div className="space-y-4">
                           <div className="bg-surface-container-low p-4 rounded-xl">
-                            <h4 className="text-[10px] uppercase font-bold tracking-widest text-primary mb-2" style={{ color: '#FF7F50' }}>Key Deliverables</h4>
-                            <ul className="text-xs space-y-2 text-on-surface">
-                              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Transcribed Insights</li>
-                              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Affinity Mapping Clusters</li>
-                              <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Empathy Map Synthesis</li>
-                            </ul>
+                            <h4 className="text-[10px] uppercase font-bold tracking-widest text-primary mb-2" style={{ color: '#FF7F50' }}>Cross-Persona Overlap</h4>
+                            <p className="text-xs space-y-2 text-on-surface">
+                              Upper management expressed interest in accessing supervisor-reviewed calls with grading and annotations. Conversely, supervisors saw value in listening to live call snippets across the contact center. This overlap drove the unified product direction.
+                            </p>
                           </div>
                           <div className="flex gap-4">
                             <div className="flex-1 aspect-video rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
@@ -220,7 +220,7 @@ export default function CCPulseCaseStudy({
             <span className="block text-[0.75rem] tracking-[0.2em] font-extrabold uppercase text-[#FF7F50] mb-4">02 / CORE CHALLENGES</span>
             <h2 className="text-3xl md:text-4xl font-black tracking-tight text-on-secondary-fixed uppercase mb-4">Core Challenges</h2>
             <p className="text-on-surface-variant max-w-3xl mb-16 leading-relaxed">
-              Moderators faced constant real-time challenges, navigating a fragmented ecosystem where managing content across multiple platforms required jumping between siloed tools, leading to missed violations and operational drift.
+              As the discovery phase progressed, a clear pattern emerged: these tasks fit naturally into small pockets of time — snack breaks, commutes, timecard reviews. Users didn't need another desktop tool. They needed something that worked passively, in motion, and with minimal cognitive load. This shaped every constraint we designed around.
             </p>
             <div className="mb-16 aspect-video rounded-3xl overflow-hidden border border-white/5 shadow-2xl bg-on-secondary-fixed">
               <ZoomableImage alt="Intelligent Architecture: Data Flow & Control" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujc5mgkcTmcZxqsrURaOxqsrM3mOxlt-QwUBBbYxdg1AZztzzlHwHAOBuoMqPOWQP4P4ADPJrzCPXzf_0A_UKG6zowYCRFenlnNWELb17XTPs2B22lgoPwu6G7sGOxMCvG96hyCY1zmkVnnkrrYkB9vmg_C-Vm-aCKDT3H8J0b62hspeTj17WtVmOL8ubtOFwZk9KwNX44CbOaOii7GiRzbUZT9hf_PTTJSlAPQ3xwN4zPv_Gv49m7DRIL4QO6xlHyKrD-JHjoGsw" referrerPolicy="no-referrer" />
@@ -229,63 +229,100 @@ export default function CCPulseCaseStudy({
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
               <div className="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                 <span className="material-symbols-outlined text-primary mb-6 text-4xl" style={{ color: '#FF7F50' }}>groups</span>
-                <h3 className="text-lg font-bold text-on-secondary-fixed mb-4">Content Volume</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">Balancing content streams with fluctuating traffic volumes in real-time was a manual, error-prone guessing game.</p>
+                <h3 className="text-lg font-bold text-on-secondary-fixed mb-4">Mobile-First Access</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">Tasks like call reviews and KPI checks happen in brief, unpredictable windows throughout the day. A native mobile app for both iOS and Android was the only format that could realistically fit into those moments.</p>
               </div>
               <div className="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                 <span className="material-symbols-outlined text-primary mb-6 text-4xl" style={{ color: '#FF7F50' }}>account_tree</span>
-                <h3 className="text-lg font-bold text-on-secondary-fixed mb-4">Operational Complexity</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">Moderators navigated between multiple different browser tabs to perform a single moderation action.</p>
+                <h3 className="text-lg font-bold text-on-secondary-fixed mb-4">In-Vehicle Use Cases</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">Several senior participants mentioned wanting to listen to calls during their commute to get a sense of how the day was starting on the floor. This drove the need for CarPlay and Android Auto integration with safety-first, low-touch design.</p>
               </div>
               <div className="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                 <span className="material-symbols-outlined text-primary mb-6 text-4xl" style={{ color: '#FF7F50' }}>speed</span>
-                <h3 className="text-lg font-bold text-on-secondary-fixed mb-4">Efficiency Gaps</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">SLA lag times meant moderators were reacting to issues that had already resolved or escalated beyond control.</p>
+                <h3 className="text-lg font-bold text-on-secondary-fixed mb-4">Passive Engagement</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">Users didn't want to actively manage the experience — they wanted to absorb information in the background. This meant voice prompt functionality and hands-free navigation became core requirements, not nice-to-haves.</p>
               </div>
               <div className="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                 <span className="material-symbols-outlined text-primary mb-6 text-4xl" style={{ color: '#FF7F50' }}>history</span>
-                <h3 className="text-lg font-bold text-on-secondary-fixed mb-4">Manual Classification</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">SLA lag times meant moderators were reacting to issues that had already resolved or escalated beyond control, requiring manual classification of content throughout the day.</p>
+                <h3 className="text-lg font-bold text-on-secondary-fixed mb-4">Cross-Persona Data Sharing</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">Upper management wanted access to supervisor-graded calls with annotations. Supervisors wanted live call snippets across the floor. Syncing with the existing Supervisor App made both possible without duplicating infrastructure.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Iterations */}
+        <section className="py-24 px-12 md:px-24 bg-surface">
+          <div className="max-w-6xl mx-auto">
+            <span className="block text-[0.75rem] tracking-[0.2em] font-extrabold uppercase text-[#FF7F50] mb-4">03 / DESIGN ITERATIONS</span>
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+              <div className="max-w-2xl">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-on-secondary-fixed uppercase leading-tight mb-6">Design Iterations: Unifying the Platform</h2>
+                <p className="text-on-surface-variant">The primary focus during wireframing was ensuring the interface remained simple and intuitive. Since the app is intended for background use — or even while driving — ease of interaction was critical. Voice prompts and minimal-touch controls became key design considerations to support safe and seamless use in motion.</p>
+              </div>
+            </div>
+            <div className="space-y-32">
+              <div className="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                  <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-4 block" style={{ color: '#FF7F50' }}>Sketching Ideation</span>
+                  <h3 className="text-2xl font-bold text-on-secondary-fixed mb-6">Sketching / Ideation Phase</h3>
+                  <p className="text-on-surface-variant leading-relaxed mb-8">
+                    What Was Prioritized in Early Wireframes:
+                  </p>
+                  <ul className="space-y-4">
+                    <li className="flex items-center gap-3 text-sm font-medium text-on-background">
+                      <span className="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+                      Streamlined, user-friendly interface designed for quick interactions
+                    </li>
+                    <li className="flex items-center gap-3 text-sm font-medium text-on-background">
+                      <span className="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+                      Voice prompt functionality for hands-free navigation
+                    </li>
+                    <li className="flex items-center gap-3 text-sm font-medium text-on-background">
+                      <span className="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+                      Safety-first approach minimizing cognitive load for in-vehicle use
+                    </li>
+                    <li className="flex items-center gap-3 text-sm font-medium text-on-background">
+                      <span className="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+                      Ability to sync and pull relevant team data from the existing Supervisor App
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-2xl bg-surface-container-high aspect-video">
+                  <ZoomableImage alt="Sketching Phase" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGB8qZsasZyAbUDMhN1SZMpHHs8xVg5fvbZYuYzdNGdQ4a0pXUAzlJtdggOjjFZ5Ps0HCObIjfXdNUA6KNLB8jLlnS8JIV9q0LAei8KGaT-b1HvwEmfWpQM5oEoQGFkCi3tVV_7dM8aiPXsb0-6W965PR6mi5_gyFPJWXFR1t9D4YHCOUCNoAYT62ZyzU1zyblG1zxQ9fz3Al7VqQyFWZvarzdUjTV2-nvjpqLNilc5CzSVqlV940Xsu-cMeD5F7flsx1i4YTHS2BK" referrerPolicy="no-referrer" />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Design Solution */}
-        <section className="py-24 px-12 md:px-24 bg-surface">
+        <section className="py-24 px-12 md:px-24 bg-surface-container-low">
           <div className="max-w-6xl mx-auto">
-            <span className="block text-[0.75rem] tracking-[0.2em] font-extrabold uppercase text-[#FF7F50] mb-4">03 / DESIGN SOLUTION</span>
-            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-              <div className="max-w-2xl">
+            <span className="block text-[0.75rem] tracking-[0.2em] font-extrabold uppercase text-[#FF7F50] mb-4">04 / THE DESIGN SOLUTION</span>
+            <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
+              <div>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tight text-on-secondary-fixed uppercase leading-tight mb-6">The Design Solution: The Unified Platform</h2>
-                <p className="text-on-surface-variant">We architected a dashboard that functions as a command tower, prioritizing the "Human Element" of content moderation. The platform was built from scratch to strategically avoid legacy tech debt, ensuring a very lightweight and high-performance product experience.</p>
+                <div className="text-on-surface-variant">
+                  <p className="mb-6">In the final stages of design, we focused on delivering a sleek, user-friendly interface that could adapt to different branding needs. Anticipating potential white-label partnerships, we ensured the color palette would be easily customizable. The initial release features a dark theme for safe, low-glare use during night driving, with a light mode planned for a future phase.</p>
+                  <p className="font-bold text-on-secondary-fixed border-l-4 border-primary pl-4 py-2 mt-4" style={{ borderColor: '#FF7F50' }}>A contact center in your pocket — designed for the moments between everything else, built to work as safely at 60mph as it does at a desk.</p>
+                </div>
+              </div>
+              <div className="rounded-[1.5rem] overflow-hidden bg-[#dcdcdc] aspect-[4/3] md:aspect-[16/10] w-full">
+                {/* Image Placeholder */}
               </div>
             </div>
             <div className="space-y-32">
               <div className="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                  <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-4 block" style={{ color: '#FF7F50' }}>Real-time Visibility</span>
-                  <h3 className="text-2xl font-bold text-on-secondary-fixed mb-6">The Moderation Dashboard</h3>
+                  <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-4 block" style={{ color: '#FF7F50' }}>Feature 1</span>
+                  <h3 className="text-2xl font-bold text-on-secondary-fixed mb-6">The Mobile Experience</h3>
                   <p className="text-on-surface-variant leading-relaxed mb-8">
-                    A high-level view of the entire content stream. Items are visualized not as numbers, but as dynamic status indicators that highlight what needs review immediately.
+                    The mobile interface was designed around brevity and clarity — quick-glance KPI cards, one-tap call playback, and grading flows that could be completed in under a minute. Every screen was optimized for use with one hand, in brief windows of attention.
                   </p>
-                  <ul className="space-y-4">
-                    <li className="flex items-center gap-3 text-sm font-medium text-on-background">
-                      <span className="material-symbols-outlined text-tertiary text-lg">check_circle</span>
-                      Color-coded priority states
-                    </li>
-                    <li className="flex items-center gap-3 text-sm font-medium text-on-background">
-                      <span className="material-symbols-outlined text-tertiary text-lg">check_circle</span>
-                      Predictive SLA overlays
-                    </li>
-                    <li className="flex items-center gap-3 text-sm font-medium text-on-background">
-                      <span className="material-symbols-outlined text-tertiary text-lg">check_circle</span>
-                      MVP Focus: Dashboard, Streams, Classification, and Quality Control
-                    </li>
-                  </ul>
                 </div>
                 <div className="rounded-xl overflow-hidden shadow-2xl bg-surface-container-high aspect-video">
-                  <ZoomableImage alt="Moderation Dashboard Screenshot" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGB8qZsasZyAbUDMhN1SZMpHHs8xVg5fvbZYuYzdNGdQ4a0pXUAzlJtdggOjjFZ5Ps0HCObIjfXdNUA6KNLB8jLlnS8JIV9q0LAei8KGaT-b1HvwEmfWpQM5oEoQGFkCi3tVV_7dM8aiPXsb0-6W965PR6mi5_gyFPJWXFR1t9D4YHCOUCNoAYT62ZyzU1zyblG1zxQ9fz3Al7VqQyFWZvarzdUjTV2-nvjpqLNilc5CzSVqlV940Xsu-cMeD5F7flsx1i4YTHS2BK" referrerPolicy="no-referrer" />
+                  <ZoomableImage alt="The Mobile Experience" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGB8qZsasZyAbUDMhN1SZMpHHs8xVg5fvbZYuYzdNGdQ4a0pXUAzlJtdggOjjFZ5Ps0HCObIjfXdNUA6KNLB8jLlnS8JIV9q0LAei8KGaT-b1HvwEmfWpQM5oEoQGFkCi3tVV_7dM8aiPXsb0-6W965PR6mi5_gyFPJWXFR1t9D4YHCOUCNoAYT62ZyzU1zyblG1zxQ9fz3Al7VqQyFWZvarzdUjTV2-nvjpqLNilc5CzSVqlV940Xsu-cMeD5F7flsx1i4YTHS2BK" referrerPolicy="no-referrer" />
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -297,7 +334,7 @@ export default function CCPulseCaseStudy({
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                       transition={{ duration: 0.5 }}
-                      alt={`Granular Drill-ins View ${currentRotorImage + 1}`}
+                      alt={`CarPlay & Android Auto View ${currentRotorImage + 1}`}
                       className="w-full h-full object-contain drop-shadow-xl"
                       src={rotorImages[currentRotorImage]}
                     />
@@ -318,38 +355,30 @@ export default function CCPulseCaseStudy({
                   </div>
                 </div>
                 <div className="order-1 md:order-2">
-                  <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-4 block" style={{ color: '#FF7F50' }}>Contextual Depth</span>
-                  <h3 className="text-2xl font-bold text-on-secondary-fixed mb-6">Granular Drill-ins</h3>
+                  <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-4 block" style={{ color: '#FF7F50' }}>Feature 2</span>
+                  <h3 className="text-2xl font-bold text-on-secondary-fixed mb-6">CarPlay & Android Auto</h3>
                   <p className="text-on-surface-variant leading-relaxed mb-8">
-                    Clicking a content item doesn't take you to a new page; it unfolds a contextual layer. View sentiment analysis, history, and trends without losing stream context.
+                    The CarPlay experience reduced the interface to its absolute essentials — audio playback controls, voice-prompted navigation, and status indicators that could be read at a glance without diverting attention from the road. Safety was the primary design constraint throughout.
                   </p>
-                  <div className="p-6 bg-surface-container-low rounded-lg">
-                    <p className="text-sm font-semibold text-on-background mb-2">Direct Intervention Tools:</p>
-                    <div className="flex gap-4">
-                      <span className="px-3 py-1 bg-surface-container-lowest text-[10px] font-bold rounded uppercase tracking-tighter">Review</span>
-                      <span className="px-3 py-1 bg-surface-container-lowest text-[10px] font-bold rounded uppercase tracking-tighter">Flag</span>
-                      <span className="px-3 py-1 bg-primary text-white text-[10px] font-bold rounded uppercase tracking-tighter" style={{ backgroundColor: '#FF7F50' }}>Remove</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div className="grid md:grid-cols-2 gap-16 items-start">
                 <div>
-                  <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-4 block" style={{ color: '#FF7F50' }}>Innovation</span>
-                  <h3 className="text-2xl font-bold text-on-secondary-fixed mb-6">Dynamic 'Levers' & Automated Reversion</h3>
+                  <span className="text-[10px] uppercase tracking-widest text-primary font-bold mb-4 block" style={{ color: '#FF7F50' }}>Feature 3</span>
+                  <h3 className="text-2xl font-bold text-on-secondary-fixed mb-6">Voice Prompts & Hands-Free Navigation</h3>
                   <p className="text-on-surface-variant leading-relaxed mb-8">
-                    Instead of complex mapping, we introduced 'Levers'—a tactile way to rebalance moderation focus. Shift a moderator's focus from Video to Text with a single slider.
+                    Voice prompt functionality enables hands-free navigation and interaction throughout the app — allowing supervisors and leaders to engage with call content without touching the screen, whether in the car or multitasking at their desk.
                   </p>
-                  <div className="bg-on-secondary-fixed text-white p-8 rounded-xl">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="material-symbols-outlined text-primary-container" style={{ color: '#FF7F50' }}>auto_mode</span>
-                      <p className="font-bold">Automated Reversion</p>
-                    </div>
-                    <p className="text-sm text-secondary-fixed-dim">Set temporary focus boosts that automatically revert after a period, preventing the common "forgotten setting" that causes long-term operational drift.</p>
-                  </div>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-2xl bg-surface-container-high aspect-video">
-                  <ZoomableImage alt="Direct Intervention Interface" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArODthAc4813VMJt7e2BEELX3TsT6dpUKT38IAQSgkgg45AwMfDp2sLbWpapzRGHhz08VYsl78K9UR0b7f8teT-tWH9-NWep0ucqhlfjyLOoMSzHWXvj8UtCKwFz_Ifo8xwqmFznRc9jxVl10sgleVZr558nKKHLJ36eDqzO52bcMypWyfB6vbiD4alLYKoPAqcCDi6jfVkowRISaZo5PErFOiAOmh0r04RQ3BFdJR2DeJCTqDlCtjbBv4lCcoAGbe9WEGdxQbabJk" referrerPolicy="no-referrer" />
+                <div className="rounded-xl overflow-hidden shadow-2xl bg-surface-container-high aspect-video md:mt-8">
+                  <ZoomableImage alt="Voice Prompts & Hands-Free Navigation" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArODthAc4813VMJt7e2BEELX3TsT6dpUKT38IAQSgkgg45AwMfDp2sLbWpapzRGHhz08VYsl78K9UR0b7f8teT-tWH9-NWep0ucqhlfjyLOoMSzHWXvj8UtCKwFz_Ifo8xwqmFznRc9jxVl10sgleVZr558nKKHLJ36eDqzO52bcMypWyfB6vbiD4alLYKoPAqcCDi6jfVkowRISaZo5PErFOiAOmh0r04RQ3BFdJR2DeJCTqDlCtjbBv4lCcoAGbe9WEGdxQbabJk" referrerPolicy="no-referrer" />
+                </div>
+              </div>
+              <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-primary text-white py-12 px-12 md:px-24 mt-24" style={{ backgroundColor: '#FF7F50' }}>
+                <div className="max-w-4xl mx-auto text-center">
+                  <p className="text-xl md:text-2xl font-black font-sans leading-relaxed">
+                    While CC Pulse was deprioritized in favor of more urgent initiatives, the concept never lost its momentum. The design received strong validation during testing, and the product is now being considered by an external development team. I believe it offers real, lasting value — and I'm hopeful it will find its way to the people it was built for.
+                  </p>
                 </div>
               </div>
             </div>
@@ -359,15 +388,15 @@ export default function CCPulseCaseStudy({
         {/* Business Impact & Success Section */}
         <section className="py-24 px-12 md:px-24 bg-[#161d30]">
           <div className="max-w-6xl mx-auto text-left">
-            <span className="block text-[0.75rem] tracking-[0.2em] font-extrabold uppercase text-[#FF7F50]/80 mb-4">04 / BUSINESS IMPACT</span>
+            <span className="block text-[0.75rem] tracking-[0.2em] font-extrabold uppercase text-[#FF7F50]/80 mb-4">06 / BUSINESS IMPACT</span>
             <h2 className="text-3xl md:text-4xl font-black tracking-tight uppercase leading-tight mb-16 text-white">Business Impact & Success</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
               <div className="flex flex-col">
                 <div className="mb-2">
-                  <span className="text-4xl md:text-5xl font-black block text-white">Green Light</span>
-                  <span className="text-xs font-bold uppercase tracking-widest text-primary" style={{ color: '#FF7F50' }}>From Executive Committee</span>
+                  <span className="text-4xl md:text-5xl font-black block text-white">Strong</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-primary" style={{ color: '#FF7F50' }}>Validation</span>
                 </div>
-                <p className="text-sm leading-relaxed mb-6 h-12 text-slate-300">Cited as the most significant leap in platform usability in a decade.</p>
+                <p className="text-sm leading-relaxed mb-6 h-12 text-slate-300">{/* [CONFIRM] add number of user test sessions, rounds of feedback, or a standout participant quote from your research notes. */}[CONFIRM]</p>
                 <div className="mt-auto bg-white/5 h-32 rounded-xl flex items-end p-4 relative overflow-hidden border border-white/10">
                   <div className="w-full flex items-end gap-1 h-full">
                     <div className="bg-primary/20 w-full h-[30%] rounded-t-sm"></div>
@@ -380,10 +409,10 @@ export default function CCPulseCaseStudy({
               </div>
               <div className="flex flex-col">
                 <div className="mb-2">
-                  <span className="text-4xl md:text-5xl font-black block text-white">Top Seller</span>
-                  <span className="text-xs font-bold uppercase tracking-widest text-primary" style={{ color: '#FF7F50' }}>Global Performance</span>
+                  <span className="text-4xl md:text-5xl font-black block text-white">External</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-primary" style={{ color: '#FF7F50' }}>Pickup</span>
                 </div>
-                <p className="text-sm leading-relaxed mb-6 h-12 text-slate-300">Became one of CC Pulse's highest-performing products.</p>
+                <p className="text-sm leading-relaxed mb-6 h-12 text-slate-300">Concept is now being considered by an external development team for implementation — validating the product's relevance beyond its original organizational context.</p>
                 <div className="mt-auto bg-[#161d30] h-32 rounded-xl flex items-center justify-center p-6 relative overflow-hidden">
                   <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 40">
                     <path d="M0,35 Q20,35 30,25 T50,20 T70,10 T100,5" fill="none" stroke="#FF7F50" strokeLinecap="round" strokeWidth="3"></path>
@@ -400,10 +429,10 @@ export default function CCPulseCaseStudy({
               </div>
               <div className="flex flex-col">
                 <div className="mb-2">
-                  <span className="text-4xl md:text-5xl font-black block text-white">+124%</span>
-                  <span className="text-xs font-bold uppercase tracking-widest text-primary" style={{ color: '#FF7F50' }}>Performance 2024</span>
+                  <span className="text-4xl md:text-5xl font-black block text-white">4 Platforms</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-primary" style={{ color: '#FF7F50' }}>Cross-Device</span>
                 </div>
-                <p className="text-sm leading-relaxed mb-6 h-12 text-slate-300">Explosive adoption across enterprise-tier content moderation organizations.</p>
+                <p className="text-sm leading-relaxed mb-6 h-12 text-slate-300">Designed across iOS, Android, CarPlay, and Android Auto — a unified experience that works wherever leadership and supervisors already are.</p>
                 <div className="mt-auto bg-white/5 h-32 rounded-xl flex items-end p-4 relative overflow-hidden border border-white/10">
                   <div className="absolute inset-0 flex flex-col justify-between p-4 opacity-20">
                     <div className="w-full h-[1px] bg-white"></div>
