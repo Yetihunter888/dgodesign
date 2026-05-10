@@ -14,6 +14,7 @@ interface CaseStudyTemplateProps {
   task?: string;
   role?: string;
   timeline?: string;
+  solutionImage?: string;
 }
 
 export default function CaseStudyTemplate({ 
@@ -24,7 +25,8 @@ export default function CaseStudyTemplate({
   company = "NICE/inContact",
   task = "Dashboard Redesign",
   role = "Lead UX Designer",
-  timeline = "6 Months"
+  timeline = "6 Months",
+  solutionImage = "https://placehold.co/1200x800/e1e3e4/57423b?text=Solution+Placeholder"
 }: CaseStudyTemplateProps) {
   const researchData = {
     INITIAL: {
@@ -460,7 +462,12 @@ export default function CaseStudyTemplate({
                 </div>
               </div>
               <div className="rounded-[1.5rem] overflow-hidden bg-[#dcdcdc] aspect-[4/3] md:aspect-[16/10] w-full">
-                {/* Image Placeholder */}
+                <ZoomableImage 
+                  alt="Design Solution: Unified Platform" 
+                  className="w-full h-full object-cover" 
+                  src={solutionImage}
+                  referrerPolicy="no-referrer"
+                />
               </div>
             </div>
             <div className="space-y-32">

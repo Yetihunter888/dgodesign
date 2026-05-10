@@ -10,7 +10,12 @@ import Home from './pages/Home';
 import CaseStudyTemplate from './pages/CaseStudyTemplate';
 import CCPulseCaseStudy from './pages/CCPulseCaseStudy';
 import NiceDashboardPortfolio from './pages/NiceDashboardPortfolio';
+import ImpartnerPortfolio from './pages/ImpartnerPortfolio';
+import MaxPortfolio from './pages/MaxPortfolio';
+import SerenovaPortfolio from './pages/SerenovaPortfolio';
 import ContactModal from './components/ContactModal';
+import niceHero from './assets/NICE_SUP_AGENTS.png';
+import laptopSkills from './assets/Laptop-Skills-1.png';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -41,9 +46,10 @@ export default function App() {
             element={
               <CaseStudyTemplate 
                 onContactClick={handleContactClick}
-                title="NICE/inContact Supervisor Experience"
+                title="NICE SUPERVISOR Experience"
                 subtitle="Contact center supervisors are the backbone of customer experience operations, yet their tools had not kept pace with the demands of the role. Through deep contextual inquiry and hands on research sessions, we built an entirely new product from the ground up that set a new standard for how supervisors work."
-                heroImage="https://lh3.googleusercontent.com/aida-public/AB6AXuBPMqiiaRKNUfZ-Be2Tt1kVQWcLsQE3NyeEKdt3mkfeKfwqL64rduMnhAgdzm2kfvrCrewxr_xCUwY3_RLj6uZEO9PRrG9PIbQwbtH9rVbgsYS0HlJ1nAAPpoaK9A9A1654xdnxIyOzyCuFP4MC2wzq4Y09VEnIX-vYYo_4D9fUjLWMDKSKztdQN_SO0Fzy4WHiIsCHpUf3WosT82DJHC1MXntNW-mFKlqW1uAkW2kjKDNSKBOBQDU3fbt_UXIIDLM1-r7rqDDP43lx"
+                heroImage={niceHero}
+                solutionImage={laptopSkills}
                 company="NICE/inContact"
                 task="Dashboard Redesign"
                 role="Lead UX Designer"
@@ -73,6 +79,18 @@ export default function App() {
           <Route 
             path="/portfolio/nice-dashboard" 
             element={<NiceDashboardPortfolio onContactClick={handleContactClick} />} 
+          />
+          <Route 
+            path="/portfolio/impartner-preview" 
+            element={<ImpartnerPortfolio onContactClick={handleContactClick} />} 
+          />
+          <Route 
+            path="/portfolio/max" 
+            element={<MaxPortfolio onContactClick={handleContactClick} />} 
+          />
+          <Route 
+            path="/portfolio/serenova-supervisor" 
+            element={<SerenovaPortfolio onContactClick={handleContactClick} />} 
           />
         </Routes>
         

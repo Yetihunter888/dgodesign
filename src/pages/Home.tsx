@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 import ContactModal from '../components/ContactModal';
 import Header from '../components/Header';
+import niceHero from '../assets/NICE_SUP_AGENTS.png';
 
 interface HomeProps {
   onContactClick: () => void;
@@ -50,10 +51,10 @@ export default function Home({ onContactClick }: HomeProps) {
     {
       id: 'cs-1',
       tag: 'ENTERPRISE SAAS',
-      title: 'NICE/inContact Supervisor',
+      title: 'NICE SUPERVISOR',
       description: 'Click to explore the case study, showcasing the journey from a whiteboard concept to a pivotal feature within the NICE CXOne platform.',
       goals: ['Goal: Real-time center management', 'Role: Lead UX Designer', 'Outcome: 4 Months timeline'],
-      image: 'https://www.dropbox.com/scl/fi/q303ib81dl4i8ubvxewou/IMG_9084.jpg?rlkey=vjox3y9ik54fzw8iqqm5v1ifk&raw=1',
+      image: niceHero,
       link: '/case-study/nice-incontact'
     },
     {
@@ -78,19 +79,19 @@ export default function Home({ onContactClick }: HomeProps) {
     },
     {
       id: 'g-2',
-      title: 'E-commerce Micro-interactions',
-      description: 'Motion design exploration to enhance the \'Add to Cart\' experience.',
-      tags: ['Animation', 'UX', 'Lead'],
-      image: 'https://picsum.photos/seed/ecommerce/400/300',
-      link: '/case-study/placeholder'
+      title: 'Impartner Preview',
+      description: 'Designing a seamless preview experience for Partner Portal changes before they go live.',
+      tags: ['UX Design', 'SaaS', 'Lead'],
+      image: 'https://placehold.co/1200x800/e1e3e4/57423b?text=Impartner+Preview',
+      link: '/portfolio/impartner-preview'
     },
     {
       id: 'g-3',
-      title: 'Smart Home Controller',
-      description: 'Designing the interface for an IoT-enabled smart thermostat.',
-      tags: ['IoT', 'Product Design'],
-      image: 'https://picsum.photos/seed/smarthome/400/300',
-      link: '/case-study/placeholder'
+      title: 'Max (Agent Experience)',
+      description: 'A complete overhaul of NICE inContact\'s agent experience, transforming legacy software into a user-centric power tool.',
+      tags: ['UX Design', 'Enterprise', 'Lead'],
+      image: 'https://placehold.co/1200x800/e1e3e4/57423b?text=Max+Agent+Experience',
+      link: '/portfolio/max'
     },
     {
       id: 'g-4',

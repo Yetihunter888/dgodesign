@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 interface HeaderProps {
   onContactClick: () => void;
@@ -39,7 +40,7 @@ export default function Header({ onContactClick }: HeaderProps) {
       name: 'CASE STUDY', 
       href: isHomePage ? '#case-study' : '/#case-study',
       dropdown: [
-        { name: 'NICE/inContact', href: '/case-study/nice-incontact' },
+        { name: 'NICE SUPERVISOR', href: '/case-study/nice-incontact' },
         { name: 'CC Pulse', href: '/case-study/cc-pulse' },
       ]
     },
@@ -48,8 +49,9 @@ export default function Header({ onContactClick }: HeaderProps) {
       href: isHomePage ? '#portfolio' : '/#portfolio',
       dropdown: [
         { name: 'NICE Dashboards', href: '/portfolio/nice-dashboard' },
-        { name: 'E-commerce', href: '/case-study/placeholder' },
-        { name: 'Smart Home', href: '/case-study/placeholder' },
+        { name: 'Impartner Preview', href: '/portfolio/impartner-preview' },
+        { name: 'Max (Agent Experience)', href: '/portfolio/max' },
+        { name: 'Serenova Supervisor', href: '/portfolio/serenova-supervisor' },
       ]
     },
     { name: 'ABOUT', href: isHomePage ? '#about' : '/#about' },
@@ -80,7 +82,7 @@ export default function Header({ onContactClick }: HeaderProps) {
             className="flex items-center gap-2 cursor-pointer"
             onClick={(e) => isHomePage && handleNavClick(e as any, '#home')}
           >
-            <img src="/logo.png" alt="DGO Design Logo" className="h-16 object-contain" />
+            <img src={logo} alt="DGO Design Logo" className="h-16 object-contain" />
           </Link>
           
           <div className="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide uppercase text-white/80" ref={dropdownRef}>
